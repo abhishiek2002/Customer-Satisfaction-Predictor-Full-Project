@@ -83,62 +83,81 @@
     </nav>
 
     <main>
-        <form action="">
+        <form action="{{  url_for('prediction')  }}" method="post">
             <label for="age">
                 Age <br>
-                <input type="text" id="age" name="age">
+                <input type="number" id="age" name="age" required>
             </label>
             <label for="distance">
                 Distance Travel <br>
-                <input type="text" id="distance" name="distance">
+                <input type="number" id="distance" name="distance" required>
             </label>
             <label for="entertainment">
                 Entertainment Rating <br>
-                <input type="text" name="entertainment" id="entertainment" placeholder="Rating Out Of 5">
+                <select name="entertainment" id="entertainment">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </label>
             <label for="Baggage_Handling">
                 Baggage Handling Rating <br>
-                <input type="text" name="Handling" id="Handling" placeholder="Rating Out Of 5">
+                <select name="Handling" id="Handling">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </label>
             <label for="clininess">
                 Clininess Rating <br>
-                <input type="text" name="clininess" id="clininess" placeholder="Rating Out Of 5">
+                <select name="clininess" id="clininess">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </label>
             <label for="depart_delay">
                 Departure Delay In Minute <br>
-                <input type="text" name="delay" id="delay">
+                <input type="number" name="delay" id="delay" required>
             </label>
-            <label for="arrival_delay">
+            <label for="arr_delay">
                 Arrival Delay In Minute <br>
-                <input type="text" name="delay" id="delay">
+                <input type="number" name="arr_delay" id="arri_delay" required>
             </label>
             <label for="sex">
                 Gender <br>
-                <select name="sex" id="sex">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                <select name="sex" id="sex" required>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
                 </select>
             </label>
             <label for="cust_type">
                 Customer Type <br>
-                <select name="cust_type" id="cust_type">
-                    <option value="Male">Loyal</option>
-                    <option value="Female">Disloyal</option>
+                <select name="cust_type" id="cust_type" required>
+                    <option value="0">Loyal</option>
+                    <option value="1">Disloyal</option>
                 </select>
             </label>
             <label for="trv_type">
                 Travel Purpose <br>
-                <select name="trv_type" id="trv_type">
-                    <option value="Personal">Personal</option>
-                    <option value="Business">Business</option>
+                <select name="trv_type" id="trv_type" required>
+                    <option value="1">Personal</option>
+                    <option value="0">Business</option>
                 </select>
             </label>
             <label for="class">
                 Class Type <br>
-                <select name="class" id="class">
-                    <option value="Business_class">Business Class</option>
+                <select name="class" id="class" required>
+
                     <option value="Eco">Economy Class</option>
-                    <option value="Eco+">Economy Plus Class</option>
+                    <option value="Eco_Plus">Economy Plus Class</option>
+                    <option value="Business">Business Class</option>
 
                 </select>
             </label>
