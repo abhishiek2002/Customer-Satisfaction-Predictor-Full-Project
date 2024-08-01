@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: transparent;
+            color: azure;
+            cursor:url('/static/icons/cursor-yellow.png') ,pointer;
+        }
+        
+        body{
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+        }
+
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+
+        a:hover{
+            cursor:url('/static/icons/pointer-yellow.png') ,pointer;
+            color: rgb(201, 195, 162);
+        }
+
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 215px;
+            padding: 15px;
+            font-size: 20px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid white;
+            margin-top:5px ;
+
+        }
+
+        .main .container{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .project{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 2px solid white;
+            padding: 15px;
+
+        }
+
+        .project div{
+
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+            gap: 2rem;
+
+        }
+        
+
+        .project div h1{
+
+            font-size: 2.5rem;
+            width: 49%;
+            text-align: center;
+
+        }
+        .project div img{
+
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px 3px black;
+
+        }
+
+        .project button{
+            font-size: 25px;
+            width: 15%;
+            border-radius: 9px;
+            background-color: #afb7fa;
+
+        }
+
+        .project button{
+            cursor:url('/static/icons/pointer-yellow.png') ,pointer;
+            filter: drop-shadow(3px 3px 15px black);
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+            padding: 51px;
+            border-bottom: 2px solid white;
+        }
+
+        .description h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .description p{
+            font-size:1.2rem ;
+        }
+
+        .profile{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            border-bottom: 2px solid white;
+
+
+        }
+
+        .profile img{
+            width: 40%;
+            border-radius: 15px;
+        }
+
+        .profile h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        footer{
+
+            text-align: center;
+            padding: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="#logistic_regression">Project</a></h3>
+        <h3><a href="#description">Description</a></h3>
+        <h3><a href="#profile">Profile</a></h3>
+    </nav>
+    <main>
+        <div class="container">
+
+            <div id="logistic_regression" class="project">
+                <div>
+                    <h1>Welcome To The Logistic Regression Project</h1>
+                    <img src="/static/icons/istockphoto-1471444483-1024x1024.jpg" alt="">
+                </div>
+
+                <button type="button"><a href="/project">Try Project</a></button>
+
+            </div>
+
+            <div id="description" class="description">
+                <h3>Project Overview: Airline Passenger Satisfaction Prediction</h3>
+                <p>
+                    Embark on a journey into the world of predictive analytics with this cutting-edge project designed to foresee the satisfaction levels of airline passengers. Utilizing the power of logistic regression, this model is meticulously trained on exclusive data provided by the airline, offering unparalleled insights into the passenger experience.
+                </p>
+                <p>
+                    Our innovative approach takes into account a variety of inputs reflecting the entire passenger journey—from booking and check-in to in-flight service and beyond. By leveraging advanced machine learning techniques, we transform these insights into actionable predictions, ensuring that airlines can elevate their service standards and enhance the overall travel experience. 
+                </p>
+                <p>
+                    Join us as we soar into the future of airline satisfaction prediction, combining data science with a passion for excellence in passenger service.
+                </p>
+            </div>
+        </div>
+
+        <div id="profile" class="profile">
+            <img src="/static/icons/kuntal2.jpeg" alt="">
+            <div class="heading">
+                <h3>Hello! , I am Abhishek Kuntal</h3>
+                <h3>Project Developer</h3>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Dhaaba Pvt Ltd 2024 All Right Reserved</p>
+    </footer>
+</body>
+</html>
